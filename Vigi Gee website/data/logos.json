@@ -1,50 +1,178 @@
 [
   {
-    "name": "Bartenura",
-    "image": "logos/Bartenura.svg"
+    "name": "21 Scents",
+    "image": "/uploads/21%20Scents.svg"
   },
   {
-    "name": "Chany Paskes",
-    "image": "logos/Chany Paskes.svg"
+    "name": "Antwerk",
+    "image": "/uploads/Antwerk.svg"
+  },
+  {
+    "name": "Apex",
+    "image": "/uploads/Apex.svg"
+  },
+  {
+    "name": "Asteridge",
+    "image": "/uploads/Asteridge.svg"
+  },
+  {
+    "name": "Beaver",
+    "image": "/uploads/Beaver.svg"
+  },
+  {
+    "name": "Berko",
+    "image": "/uploads/Berko.svg"
+  },
+  {
+    "name": "Big Dump",
+    "image": "/uploads/Big%20Dump.svg"
+  },
+  {
+    "name": "Bllix",
+    "image": "/uploads/Bllix.svg"
+  },
+  {
+    "name": "Capsol",
+    "image": "/uploads/Capsol.svg"
+  },
+  {
+    "name": "Cillity",
+    "image": "/uploads/Cillity.svg"
+  },
+  {
+    "name": "Clair",
+    "image": "/uploads/Clair.svg"
   },
   {
     "name": "Crown",
-    "image": "logos/Crown.svg"
+    "image": "/uploads/Crown.svg"
   },
   {
-    "name": "D7mtg",
-    "image": "logos/D7mtg.svg"
+    "name": "Endoc",
+    "image": "/uploads/Endoc.svg"
   },
   {
-    "name": "Freilach",
-    "image": "logos/Freilachblack.svg"
+    "name": "Estel",
+    "image": "/uploads/Estel.svg"
   },
   {
-    "name": "Getz",
-    "image": "logos/Getz.svg"
+    "name": "Fade",
+    "image": "/uploads/Fade.svg"
   },
   {
-    "name": "Lipa",
-    "image": "logos/Lipa.svg"
+    "name": "Geshikt",
+    "image": "/uploads/Geshikt.svg"
   },
   {
-    "name": "Moment",
-    "image": "logos/Moment.svg"
+    "name": "Grab a snack",
+    "image": "/uploads/Grab%20a%20snack.svg"
   },
   {
-    "name": "OhVents",
-    "image": "logos/OhVents.svg"
+    "name": "Green label",
+    "image": "/uploads/Green%20label.svg"
   },
   {
-    "name": "Palisades",
-    "image": "logos/Palisades.svg"
+    "name": "Herzare",
+    "image": "/uploads/Herzare.svg"
   },
   {
-    "name": "Pound",
-    "image": "logos/Pound.svg"
+    "name": "Humdinger",
+    "image": "/uploads/Humdinger.svg"
   },
   {
-    "name": "SolBlum",
-    "image": "logos/SolBlum.svg"
+    "name": "Jacob And sons",
+    "image": "/uploads/Jacob%20And%20sons.svg"
+  },
+  {
+    "name": "Kingston",
+    "image": "/uploads/Kingston.svg"
+  },
+  {
+    "name": "Luster",
+    "image": "/uploads/Luster.svg"
+  },
+  {
+    "name": "Mango Travel",
+    "image": "/uploads/Mango%20Travel.svg"
+  },
+  {
+    "name": "Moishy Weiss",
+    "image": "/uploads/Moishy%20Weiss.svg"
+  },
+  {
+    "name": "Momo",
+    "image": "/uploads/Momo.svg"
+  },
+  {
+    "name": "NYR",
+    "image": "/uploads/NYR.svg"
+  },
+  {
+    "name": "Olivelle",
+    "image": "/uploads/Olivelle.svg"
+  },
+  {
+    "name": "One team",
+    "image": "/uploads/One%20team.svg"
+  },
+  {
+    "name": "Pulse",
+    "image": "/uploads/Pulse.svg"
+  },
+  {
+    "name": "Rivky Kasirer",
+    "image": "/uploads/Rivky%20Kasirer.svg"
+  },
+  {
+    "name": "Ruboxa",
+    "image": "/uploads/Ruboxa.svg"
+  },
+  {
+    "name": "Shea Kaller",
+    "image": "/uploads/Shea%20Kaller.svg"
+  },
+  {
+    "name": "Shmueli cast",
+    "image": "/uploads/Shmueli%20cast.svg"
+  },
+  {
+    "name": "Simple by design",
+    "image": "/uploads/Simple%20by%20design.svg"
+  },
+  {
+    "name": "Stockyle",
+    "image": "/uploads/Stockyle.svg"
+  },
+  {
+    "name": "Tegra",
+    "image": "/uploads/Tegra.svg"
+  },
+  {
+    "name": "The Brown team",
+    "image": "/uploads/The%20Brown%20team.svg"
+  },
+  {
+    "name": "The Eden",
+    "image": "/uploads/The%20Eden.svg"
+  },
+  {
+    "name": "Tiger space",
+    "image": "/uploads/Tiger%20space.svg"
+  },
+  {
+    "name": "Tzvi Blumenfeld",
+    "image": "/uploads/Tzvi%20Blumenfeld.svg"
+  },
+  {
+    "name": "W_Grab a snack",
+    "image": "/uploads/W_Grab%20a%20snack.svg"
+  },
+  {
+    "name": "Zalmen",
+    "image": "/uploads/Zalmen.svg"
+  },
+  {
+    "name": "Zeebow",
+    "image": "/uploads/Zeebow.svg"
   }
 ]
