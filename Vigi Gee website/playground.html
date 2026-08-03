@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VigiGee — Playground (saved section)</title>
+<style>
+  @font-face{font-family:"Host Grotesk";font-style:normal;font-weight:300;src:url("fonts/HostGrotesk-Light.ttf") format("truetype");font-display:swap}
+  @font-face{font-family:"Host Grotesk";font-style:normal;font-weight:400;src:url("fonts/HostGrotesk-Regular.ttf") format("truetype");font-display:swap}
+  :root{
+    --ink:#111111;--bg:#F0EEEC;--bg2:#E8E6E4;--coral:#F4685C;--line:rgba(17,17,17,.14);
+    --serif:"Host Grotesk",-apple-system,Arial,sans-serif;
+    --sans:"Host Grotesk",-apple-system,Arial,sans-serif;
+    --gutter:24px;--margin:24px;--maxw:1400px;--unit:8px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased;line-height:1.3}
+  .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--gutter);max-width:var(--maxw);margin:0 auto;padding-inline:var(--margin)}
+
+  /* playground (saved for a future dedicated page) */
+  .playground{height:100vh;min-height:620px;display:flex;flex-direction:column;padding-block:calc(var(--unit)*10) calc(var(--unit)*6);overflow:hidden}
+  .playground .grid{flex:none}
+  .playground h2{grid-column:1/-1;font-family:var(--serif);font-weight:300;font-size:clamp(28px,3.6vw,50px);letter-spacing:-.03em;line-height:1}
+  .playground .pg-intro{grid-column:1/8;margin-top:calc(var(--unit)*2);font-size:15px;line-height:1.5;opacity:.72;max-width:46ch}
+  .pg-stage{position:relative;flex:1;min-height:0;margin-top:calc(var(--unit)*4)}
+  .pg-item{position:absolute;transition:transform .45s cubic-bezier(.2,.7,.2,1);will-change:transform;z-index:1}
+  .pg-item img{display:block;width:100%;height:auto;border-radius:3px;box-shadow:0 10px 30px rgba(0,0,0,.08);animation:pgFloat 7s ease-in-out infinite}
+  @keyframes pgFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+</style>
+</head>
+<body>
+
+<section class="playground" id="playground">
+  <div class="grid">
+    <h2>Playground</h2>
+    <p class="pg-intro">Not every project is a brand. This is the other stuff, the design work and side experiments I make when the brief is open. Move your mouse through it.</p>
+  </div>
+  <div class="pg-stage" id="pgStage">
+    <div class="pg-item" style="left:3%;top:5%;width:140px"><img src="https://picsum.photos/seed/pg1/600/600" alt=""></div>
+    <div class="pg-item" style="left:22%;top:2%;width:200px"><img src="https://picsum.photos/seed/pg2/640/360" alt=""></div>
+    <div class="pg-item" style="left:46%;top:4%;width:110px"><img src="https://picsum.photos/seed/pg3/360/640" alt=""></div>
+    <div class="pg-item" style="left:64%;top:2%;width:145px"><img src="https://picsum.photos/seed/pg4/600/600" alt=""></div>
+    <div class="pg-item" style="left:85%;top:6%;width:100px"><img src="https://picsum.photos/seed/pg5/360/640" alt=""></div>
+    <div class="pg-item" style="left:5%;top:46%;width:195px"><img src="https://picsum.photos/seed/pg6/640/360" alt=""></div>
+    <div class="pg-item" style="left:34%;top:34%;width:145px"><img src="https://picsum.photos/seed/pg7/600/600" alt=""></div>
+    <div class="pg-item" style="left:55%;top:30%;width:195px"><img src="https://picsum.photos/seed/pg8/640/360" alt=""></div>
+    <div class="pg-item" style="left:83%;top:40%;width:125px"><img src="https://picsum.photos/seed/pg9/600/600" alt=""></div>
+    <div class="pg-item" style="left:20%;top:22%;width:105px"><img src="https://picsum.photos/seed/pg10/360/640" alt=""></div>
+    <div class="pg-item" style="left:4%;top:74%;width:140px"><img src="https://picsum.photos/seed/pg11/600/600" alt=""></div>
+    <div class="pg-item" style="left:29%;top:66%;width:195px"><img src="https://picsum.photos/seed/pg12/640/360" alt=""></div>
+    <div class="pg-item" style="left:51%;top:56%;width:110px"><img src="https://picsum.photos/seed/pg13/360/640" alt=""></div>
+    <div class="pg-item" style="left:70%;top:66%;width:145px"><img src="https://picsum.photos/seed/pg14/600/600" alt=""></div>
+    <div class="pg-item" style="left:47%;top:76%;width:185px"><img src="https://picsum.photos/seed/pg15b/640/360" alt=""></div>
+  </div>
+</section>
+
+<script>
+  (function(){
+    var stage=document.getElementById('pgStage');
+    if(!stage) return;
+    var items=[].slice.call(stage.querySelectorAll('.pg-item'));
+    var MAX=130, raf=null, mx=0, my=0, active=false;
+    function apply(){
+      raf=null;
+      var maxD=Math.hypot(stage.offsetWidth,stage.offsetHeight)||1;
+      items.forEach(function(it){
+        if(!active){ it.style.transform=''; return; }
+        var cx=it.offsetLeft+it.offsetWidth/2, cy=it.offsetTop+it.offsetHeight/2;
+        var dx=cx-mx, dy=cy-my, dist=Math.hypot(dx,dy)||1;
+        var f=Math.max(0,1-dist/maxD);
+        var p=(0.3+0.7*f)*MAX;
+        it.style.transform='translate('+(dx/dist*p).toFixed(1)+'px,'+(dy/dist*p).toFixed(1)+'px)';
+      });
+    }
+    stage.addEventListener('mousemove',function(e){
+      var r=stage.getBoundingClientRect(); mx=e.clientX-r.left; my=e.clientY-r.top; active=true;
+      if(!raf) raf=requestAnimationFrame(apply);
+    });
+    stage.addEventListener('mouseleave',function(){ active=false; if(!raf) raf=requestAnimationFrame(apply); });
+  })();
+</script>
+</body>
+</html>
