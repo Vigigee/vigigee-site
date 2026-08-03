@@ -1,15 +1,50 @@
 [
-  { "name": "Ahava", "image": "logos/Ahava.svg" },
-  { "name": "Bartenura", "image": "logos/Bartenura.svg" },
-  { "name": "Chany Paskes", "image": "logos/Chany%20Paskes.svg" },
-  { "name": "Crown", "image": "logos/Crown.svg" },
-  { "name": "D7mtg", "image": "logos/D7mtg.svg" },
-  { "name": "Freilach", "image": "logos/Freilachblack.svg" },
-  { "name": "Getz", "image": "logos/Getz.svg" },
-  { "name": "Lipa", "image": "logos/Lipa.svg" },
-  { "name": "Moment", "image": "logos/Moment.svg" },
-  { "name": "OhVents", "image": "logos/OhVents.svg" },
-  { "name": "Palisades", "image": "logos/Palisades.svg" },
-  { "name": "Pound", "image": "logos/Pound.svg" },
-  { "name": "SolBlum", "image": "logos/SolBlum.svg" }
+  {
+    "name": "Bartenura",
+    "image": "logos/Bartenura.svg"
+  },
+  {
+    "name": "Chany Paskes",
+    "image": "logos/Chany Paskes.svg"
+  },
+  {
+    "name": "Crown",
+    "image": "logos/Crown.svg"
+  },
+  {
+    "name": "D7mtg",
+    "image": "logos/D7mtg.svg"
+  },
+  {
+    "name": "Freilach",
+    "image": "logos/Freilachblack.svg"
+  },
+  {
+    "name": "Getz",
+    "image": "logos/Getz.svg"
+  },
+  {
+    "name": "Lipa",
+    "image": "logos/Lipa.svg"
+  },
+  {
+    "name": "Moment",
+    "image": "logos/Moment.svg"
+  },
+  {
+    "name": "OhVents",
+    "image": "logos/OhVents.svg"
+  },
+  {
+    "name": "Palisades",
+    "image": "logos/Palisades.svg"
+  },
+  {
+    "name": "Pound",
+    "image": "logos/Pound.svg"
+  },
+  {
+    "name": "SolBlum",
+    "image": "logos/SolBlum.svg"
+  }
 ]
