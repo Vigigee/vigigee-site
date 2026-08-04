@@ -225,6 +225,8 @@
           nextLink.href = 'project.html?slug=' + encodeURIComponent(next.slug);
           var nm = nextLink.querySelector('.name');
           if (nm) nm.textContent = next.title;
+          var nth = nextLink.querySelector('.thumb');
+          if (nth) { nth.src = next.cover; nth.alt = next.title; }
         }
       }
     });
