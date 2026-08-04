@@ -637,9 +637,9 @@
   (function(){
     var el=document.getElementById('clock');
     if(!el) return;
-    el.innerHTML='<span class="ch"></span><span class="cl">:</span><span class="cm"></span> ET';
-    var ch=el.querySelector('.ch'), cm=el.querySelector('.cm');
-    function tick(){ var t=new Date().toLocaleTimeString('en-US',{timeZone:'America/New_York',hour:'2-digit',minute:'2-digit',hour12:false}).split(':'); ch.textContent=t[0]; cm.textContent=t[1]; }
+    el.innerHTML='<span class="ch"></span><span class="cl">:</span><span class="cm"></span> <span class="cp"></span>';
+    var ch=el.querySelector('.ch'), cm=el.querySelector('.cm'), cp=el.querySelector('.cp');
+    function tick(){ var s=new Date().toLocaleTimeString('en-US',{timeZone:'America/New_York',hour:'2-digit',minute:'2-digit',hour12:true}).split(' '); var hm=s[0].split(':'); ch.textContent=hm[0]; cm.textContent=hm[1]; cp.textContent=s[1]; }
     tick(); setInterval(tick,15000);
   })();
   (function(){
