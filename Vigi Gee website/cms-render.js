@@ -80,7 +80,9 @@
   var detailTitle = document.querySelector('.p-title');
 
   if (workGrids.length || detailTitle) {
-    load('data/projects.json').then(function (list) {
+    load('data/projects.json').then(function (data) {
+      /* accepts either a plain array or { "projects": [ ... ] } */
+      var list = Array.isArray(data) ? data : (data && data.projects) || [];
       if (!Array.isArray(list) || !list.length) return;
 
       /* build a project card <a> */
