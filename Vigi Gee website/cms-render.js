@@ -47,11 +47,11 @@
       }
       addBatch(BATCH);
       var wrap = document.createElement('div');
-      wrap.className = 'logos-more';
+      wrap.className = 'more-wrap';
       var btn = document.createElement('button');
-      btn.type = 'button'; btn.className = 'logos-more-btn';
+      btn.type = 'button'; btn.className = 'more-btn';
       btn.setAttribute('aria-label', 'Show more logos');
-      btn.textContent = '+';
+      btn.textContent = 'more';
       btn.addEventListener('click', function () { addBatch(BATCH); });
       wrap.appendChild(btn);
       grid.parentNode.insertBefore(wrap, grid.nextSibling);
