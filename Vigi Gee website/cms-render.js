@@ -51,7 +51,7 @@
       var btn = document.createElement('button');
       btn.type = 'button'; btn.className = 'more-btn';
       btn.setAttribute('aria-label', 'Show more logos');
-      btn.textContent = 'more';
+      btn.textContent = 'More logos';
       btn.addEventListener('click', function () { addBatch(BATCH); });
       wrap.appendChild(btn);
       grid.parentNode.insertBefore(wrap, grid.nextSibling);
